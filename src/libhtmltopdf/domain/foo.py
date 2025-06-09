@@ -2,7 +2,7 @@ import logging
 
 from jsql import sql
 
-from libfoo import engine
+from libhtmltopdf import engine
 
 
 logger = logging.getLogger(__name__)

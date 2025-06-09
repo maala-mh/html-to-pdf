@@ -6,7 +6,7 @@ from fastapi.requests import Request
 
 
 logger = logging.getLogger(__name__)
-SVC_NAME = "foo"
+SVC_NAME = "htmltopdf"
 
 app_params = {
     "title": f"{SVC_NAME} public API",
@@ -23,7 +23,7 @@ async def before_request(request: Request, call_next):
     return await call_next(request)
 
 
-from appfoo.views import router
+from apphtmltopdf.views import router
 
 app.include_router(router)
 app = SentryAsgiMiddleware(app)
