@@ -10,4 +10,4 @@ steps:
   - --cache=true
   - --cache-ttl=6h
 options:
-      logging: NONE
+      logging: GCS_ONLY
