@@ -10,4 +10,4 @@ steps:
   - --cache=true
   - --cache-ttl=6h
 options:
-      logging: GCS_ONLY
+      logging: CLOUD_LOGGING_ONLY
