@@ -5,8 +5,8 @@ steps:
 - id: "PUSH DEPLOYMENT IMAGE"
   name: gcr.io/kaniko-project/executor:latest
   args:
-  - --destination=gcr.io/$_REPO:${COMMIT_SHA}
-  - --destination=gcr.io/$_REPO:${BRANCH_NAME}
+  - --destination=gcr.io/$PROJECT_ID/$_REPO:${COMMIT_SHA}
+  - --destination=gcr.io/$PROJECT_ID/$_REPO:${BRANCH_NAME}
   - --cache=true
   - --cache-ttl=6h
 options:
