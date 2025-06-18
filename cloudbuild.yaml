@@ -1,5 +1,5 @@
 substitutions:
-    _REPO: python-backend-boilerplate
+    _REPO: html-to-pdf
 steps:
 
 - id: "PUSH DEPLOYMENT IMAGE"
@@ -9,3 +9,5 @@ steps:
   - --destination=gcr.io/$PROJECT_ID/$_REPO:${BRANCH_NAME}
   - --cache=true
   - --cache-ttl=6h
+options:
+      logging: CLOUD_LOGGING_ONLY
